@@ -1,0 +1,82 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, blueviolet, lightgreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: min(1200px, 90%);
+
+    padding: 20px 0;
+    margin: 0 0 auto 0;
+}
+
+.container div {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aquamarine;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-transform: capitalize;
+    /* margin: 0 auto; */
+    
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: blue;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+}
+
+.btn-add {
+    background-color: green;
+}
+
+.btn-remove {
+    background-color: red;
+}
+
+.bookImg {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+}
+
+.modal-form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+.modal-form input {
+    padding: 7px;
+}
+
+.modal-form label {
+    width: 100px;
+    text-align: right;
+    padding-right: 20px;
+}
